@@ -7,6 +7,8 @@ import * as f from 'fp-ts/function'
 import { ApiDeps, getMeowFile, getMeowFacts } from './api'
 import { MeowFacts, MeowFile } from './types'
 
+export type { ApiDeps } from './api'
+
 const sequenceTReader = A.sequenceT(R.Applicative)
 const sequenceTTaskPar = A.sequenceT(T.ApplicativePar)
 const sequenceTOption = A.sequenceT(O.Applicative)
