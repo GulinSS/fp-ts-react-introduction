@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { clock } from '@frp-ts/core'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App fetch={fetch} clock={clock.newCounterClock()} />
   </React.StrictMode>,
   document.getElementById('root')
 );

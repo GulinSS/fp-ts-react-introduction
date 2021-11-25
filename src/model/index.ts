@@ -1,0 +1,1 @@
+export { getAppMain } from './AppMain'
