@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useMeow } from './facade'
+import { ApiDeps } from './rest'
 
-function App() {
+function App(props: ApiDeps) {
+  const meow = useMeow(props)
+
   return (
     <div className="App">
       <header className="App-header">
